@@ -6,7 +6,7 @@ const getIngredientsHandler = async (req, res, next) => {
     const results = await allIngredients(name);
     res.status(200).json(results);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(200).json({ error: error.message });
   }
 };
 
