@@ -21,16 +21,16 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
 
-      category : {
+      category: {
         type: DataTypes.STRING,
       },
 
       veggie: {
         type: DataTypes.BOOLEAN,
       },
-      
+
       price: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.FLOAT,
       },
     },
     { timestamps: false }
