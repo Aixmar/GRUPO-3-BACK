@@ -23,8 +23,12 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
      vegetarian: {
-      type:DataTypes.BOOLEAN,
+      type: DataTypes.BOOLEAN,
       allowNull:false,
+     },
+     detail: {
+      type: DataTypes.JSON,
+      allowNull: false,
      }
     },
     { timestamps: false }

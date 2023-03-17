@@ -4,8 +4,8 @@ const pizzaList = [
     price: 10.99,
     image: "https://i.postimg.cc/J4qsjrzR/margherita.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -24,8 +24,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/cLLrmpvw/pepperoni.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -44,8 +44,8 @@ const pizzaList = [
     price: 14.99,
     image: "https://i.postimg.cc/0yXrHVS3/meat-lovers.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -64,8 +64,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/h4VzPbFz/Hawaiian.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -84,8 +84,8 @@ const pizzaList = [
     price: 13.99,
     image: "https://i.postimg.cc/WbjDDFj9/BBQ-chicken.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -104,8 +104,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/fy7J2Z7j/veggie.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -124,8 +124,8 @@ const pizzaList = [
     price: 11.99,
     image: "https://i.postimg.cc/TPHmgRQK/four-cheese.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -144,8 +144,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/Mpqy83vp/greek.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -164,8 +164,8 @@ const pizzaList = [
     price: 13.99,
     image: "https://i.postimg.cc/PfDZvnDq/buffalo-chicken.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -184,8 +184,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/ZRGdsVGZ/mushroom.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -204,8 +204,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/hjzm0H3p/Spinach-and-feta.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -224,8 +224,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/qM88SHBF/Pesto.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -244,8 +244,8 @@ const pizzaList = [
     price: 13.99,
     image: "https://i.postimg.cc/Gh0FXmRY/Sausage-and-mushroom.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -264,8 +264,8 @@ const pizzaList = [
     price: 14.99,
     image: "https://i.postimg.cc/rppxDdG6/Philly-cheesesteak.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -284,8 +284,8 @@ const pizzaList = [
     price: 15.99,
     image: "https://i.postimg.cc/PJQBVFC8/Seafood.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -304,8 +304,8 @@ const pizzaList = [
     price: 10.99,
     image: "https://i.postimg.cc/pdgbmjNy/Roasted-garlic-and-tomato-pizza.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -324,8 +324,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/ZRpkpqZH/Bacon-and-egg-pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -344,8 +344,8 @@ const pizzaList = [
     price: 11.99,
     image: "https://i.postimg.cc/x11ShYyj/Prosciutto-and-arugula-pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -364,8 +364,8 @@ const pizzaList = [
     price: 13.99,
     image: "https://i.postimg.cc/sDyzP5Mh/Artichoke-and-goat-cheese-pizza.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -385,8 +385,8 @@ const pizzaList = [
     image:
       "https://i.postimg.cc/C5CgTxQ5/Caramelized-onion-and-bacon-pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -405,8 +405,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/3wyQrBcP/Roasted-Vegetable-Pizza.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -426,8 +426,8 @@ const pizzaList = [
     image:
       "https://i.postimg.cc/wxDHsw-jz/Chicken-and-Broccoli-Alfredo-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -446,8 +446,8 @@ const pizzaList = [
     price: 11.99,
     image: "https://i.postimg.cc/DyqZn2Xq/Mac-and-Cheese-Pizza.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -466,8 +466,8 @@ const pizzaList = [
     price: 16.99,
     image: "https://i.postimg.cc/y8sNNwm2/Steak-and-Blue-Cheese-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -486,8 +486,8 @@ const pizzaList = [
     price: 15.99,
     image: "https://i.postimg.cc/WzZ4DVfc/Shrimp-Scampi-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -506,8 +506,8 @@ const pizzaList = [
     price: 13.99,
     image: "https://i.postimg.cc/L4g5Qk4Q/Chicken-Caesar-Salad-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -526,8 +526,8 @@ const pizzaList = [
     price: 14.99,
     image: "https://i.postimg.cc/DZJvDFh4/Green-Olive-and-Sausage-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -546,8 +546,8 @@ const pizzaList = [
     price: 12.99,
     image: "https://i.postimg.cc/g00kV8BD/Ricotta-and-basil.png",
     vegetarian: true,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -567,8 +567,8 @@ const pizzaList = [
     image:
       "https://i.postimg.cc/y8j83vnx/Barbecue-Bacon-Cheeseburger-Pizza.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
@@ -587,8 +587,8 @@ const pizzaList = [
     price: 15.99,
     image: "https://i.postimg.cc/MKkTCcv6/Tuna-and-red-onion.png",
     vegetarian: false,
-    userId: null,
-    model: {
+    // userId: null,
+    detail: {
       dough: "wholemeal flour",
       type: "gross",
       base: "milk cream",
