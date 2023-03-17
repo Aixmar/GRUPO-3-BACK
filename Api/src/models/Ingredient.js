@@ -28,7 +28,9 @@ module.exports = (sequelize) => {
       veggie: {
         type: DataTypes.BOOLEAN,
       },
-
+      extra:{
+        type:DataTypes.BOOLEAN
+      },
       price: {
         type: DataTypes.FLOAT,
       },
