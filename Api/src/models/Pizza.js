@@ -22,6 +22,10 @@ module.exports = (sequelize) => {
         type: DataTypes.FLOAT,
         allowNull: false,
       },
+     vegetarian: {
+      type:DataTypes.BOOLEAN,
+      allowNull:false,
+     }
     },
     { timestamps: false }
   );
