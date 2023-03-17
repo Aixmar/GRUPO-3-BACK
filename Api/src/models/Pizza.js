@@ -29,6 +29,10 @@ module.exports = (sequelize) => {
      detail: {
       type: DataTypes.JSON,
       allowNull: false,
+     },
+     category: {
+      type: DataTypes.STRING,
+      allowNull: false,
      }
     },
     { timestamps: false }
