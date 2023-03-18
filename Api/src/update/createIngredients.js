@@ -1,5 +1,5 @@
 const { Ingredient } = require('../db');
-const ingredients = require('./ingredientsJson')
+const ingredients = require('../dbJsons/ingredientsJson');
 
 
 const createIngredients = async () => {
