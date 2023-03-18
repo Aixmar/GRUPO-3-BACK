@@ -18,6 +18,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Pepperoni",
@@ -38,6 +39,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Meat lovers",
@@ -58,6 +60,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Hawaiian",
@@ -78,6 +81,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "BBQ chicken",
@@ -98,6 +102,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Veggie",
@@ -118,6 +123,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Four-cheese",
@@ -138,6 +144,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Greek",
@@ -158,6 +165,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Buffalo chicken",
@@ -178,6 +186,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Mushroom",
@@ -198,6 +207,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Spinach and feta",
@@ -218,6 +228,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Pesto",
@@ -238,6 +249,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Sausage and mushroom",
@@ -258,6 +270,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Philly cheesesteak",
@@ -278,6 +291,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Seafood",
@@ -298,6 +312,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Roasted garlic and tomato pizza",
@@ -318,6 +333,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Bacon and egg pizza",
@@ -338,6 +354,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Prosciutto and arugula pizza",
@@ -358,6 +375,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Artichoke and goat cheese pizza",
@@ -378,6 +396,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Caramelized onion and bacon pizza",
@@ -399,6 +418,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Roasted Vegetable Pizza",
@@ -419,6 +439,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Chicken and Broccoli Alfredo Pizza",
@@ -440,6 +461,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Mac and Cheese Pizza",
@@ -460,6 +482,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Steak and Blue Cheese Pizza",
@@ -480,6 +503,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Shrimp Scampi Pizza",
@@ -500,6 +524,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Chicken Caesar Salad Pizza",
@@ -520,6 +545,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Green Olive and Sausage Pizza",
@@ -540,6 +566,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Ricotta and Basil Pizza",
@@ -560,6 +587,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Barbecue Bacon Cheeseburger Pizza",
@@ -581,6 +609,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Tuna and Red Onion Pizza",
@@ -601,6 +630,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category: "pizza",
   },
   {
     name: "Supreme",
