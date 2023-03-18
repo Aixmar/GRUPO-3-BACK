@@ -602,6 +602,26 @@ const pizzaList = [
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
   },
+  {
+    name: "Supreme",
+    price: 14.99,
+    image: "https://napolipizzalv.com/wp-content/uploads/2019/10/DSC_0905-min.png",
+    vegetarian: false,
+    // userId: null,
+    detail: {
+      dough: "wholemeal flour",
+      type: "gross",
+      base: "milk cream",
+      mozzarella: "vegan mozarella",
+      toppingIngredients: ["Pineapple", "Mushrooms"],
+      cheeseIngredients: [
+        "Fontina Cheese",
+        "Asiago Cheese",
+        "Smoked Mozzarella Cheese",
+      ],
+      meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
+    },
+  },
 ];
 
 module.exports = pizzaList;
