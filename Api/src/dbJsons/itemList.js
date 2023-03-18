@@ -1,4 +1,4 @@
-const pizzaList = [
+const itemList = [
   {
     name: "Margherita",
     price: 10.99,
@@ -653,6 +653,70 @@ const pizzaList = [
     },
     category:"pizza",
   },
+  {
+    name:"Coca-Cola",
+    image:"https://i.postimg.cc/Z5y4bZQh/cocacola.png",
+    price:1.22,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Diet Coke",
+    image:"https://i.postimg.cc/V6z8WtkY/dietcoke.png",
+    price:1.40,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Fanta",
+    image:"https://i.postimg.cc/CKTYdXyn/fanta.png",
+    price:1.22,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Sprite",
+    image:"https://i.postimg.cc/cHTN9Jvf/sprite.png",
+    price:1.22,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Water",
+    image:"https://i.postimg.cc/rFHq2zQJ/agua.png",
+    price:1.15,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Strawberry Fanta",
+    image:"https://i.postimg.cc/yxdCwzRt/redfanta.png",
+    price:1.22,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"RockStar Orange",
+    image:"https://i.postimg.cc/436GcPZL/rockstarorange.png",
+    price:1.50,
+    detail:{},
+    category: "drinks",
+ },
+ {
+    name:"Splash Lemonade",
+    image:"https://i.postimg.cc/SsMh6Y3s/lemonade.png",
+    price:1.33,
+    detail:{},
+    category: "drinks",
+ },
+
+ {
+    name:"Vitamin Water",
+    image:"https://i.postimg.cc/FzPXmbJT/gatorade.png",
+    price:2.50,
+    detail:{},
+    category: "drinks",
+ },
 ];
 
-module.exports = pizzaList;
+module.exports = itemList;
