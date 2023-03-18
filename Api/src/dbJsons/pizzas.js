@@ -651,6 +651,7 @@ const pizzaList = [
       ],
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
+    category:"pizza",
   },
 ];
 
