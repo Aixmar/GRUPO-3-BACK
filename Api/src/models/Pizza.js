@@ -20,19 +20,19 @@ module.exports = (sequelize) => {
       },
       price: {
         type: DataTypes.FLOAT,
-        allowNull: false,
+        allowNull: true,
       },
      vegetarian: {
       type: DataTypes.BOOLEAN,
-      allowNull:false,
+      allowNull:true,
      },
      detail: {
       type: DataTypes.JSON,
-      allowNull: false,
+      allowNull: true,
      },
      category: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
      }
     },
     { timestamps: false }
