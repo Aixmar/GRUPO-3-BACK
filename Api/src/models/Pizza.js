@@ -22,18 +22,26 @@ module.exports = (sequelize) => {
         type: DataTypes.FLOAT,
         allowNull: true,
       },
-     vegetarian: {
-      type: DataTypes.BOOLEAN,
-      allowNull:true,
-     },
-     detail: {
-      type: DataTypes.JSON,
-      allowNull: true,
-     },
-     category: {
-      type: DataTypes.STRING,
-      allowNull: true,
-     }
+      vegetarian: {
+        type: DataTypes.BOOLEAN,
+        allowNull: true,
+      },
+      detail: {
+        type: DataTypes.JSON,
+        allowNull: true,
+      },
+      category: {
+        type: DataTypes.STRING,
+        allowNull: true,
+      },
+      rating: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+      },
+      stock: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+      }
     },
     { timestamps: false }
   );
