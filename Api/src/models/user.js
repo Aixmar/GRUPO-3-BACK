@@ -5,22 +5,22 @@ module.exports = (sequelize) => {
   sequelize.define(
     "User",
     {
-      id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey: true,
-        autoIncrement: true,
-      },
+      // id: {
+      //   type: DataTypes.INTEGER,
+      //   allowNull: false,
+      //   primaryKey: true,
+      //   autoIncrement: true,
+      // },
 
-      name: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      // name: {
+      //   type: DataTypes.STRING,
+      //   allowNull: false,
+      // },
 
-      lastName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
+      // lastName: {
+      //   type: DataTypes.STRING,
+      //   allowNull: false,
+      // },
 
       email: {
         type: DataTypes.STRING,

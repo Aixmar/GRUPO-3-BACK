@@ -845,7 +845,9 @@ const itemList = [
       carbs: 40,
       protein: 5
     },
-    category: "sides"
+    category: "sides",
+    rating: 5,
+    stock: 11,
   },
   {
     name: "Cookie dough brownie made with TWIX cookie bar pieces",
@@ -858,7 +860,9 @@ const itemList = [
       carbs: 35,
       protein: 3
     },
-    category: "sides"
+    category: "sides",
+    rating: 4,
+    stock: 8,
   },
 
   // Ejemplo 1: Cheesecake de fresa
@@ -916,7 +920,9 @@ const itemList = [
       carbs: 3,
       protein: 47
     },
-    category: "sides"
+    category: "sides",
+    rating: 3,
+    stock: 10,
   },
   {
     name: "Mix2Pizza WINGS – BBQ",
@@ -929,7 +935,9 @@ const itemList = [
       carbs: 32,
       protein: 48
     },
-    category: "sides"
+    category: "sides",
+    rating: 4,
+    stock: 9,
   },
   {
     name: "Mix2Pizza WINGS – Garlic parmesan",
@@ -942,7 +950,9 @@ const itemList = [
       carbs: 7,
       protein: 49
     },
-    category: "sides"
+    category: "sides",
+    rating: 2,
+    stock: 0,
   },
   {
     name: "Mix2Pizza DIPS - Crazy sauce",
@@ -955,7 +965,9 @@ const itemList = [
       carbs: 7,
       protein: 1
     },
-    category: "sides"
+    category: "sides",
+    rating: 4,
+    stock: 10,
   },
   {
     name: "Mix2Pizza DIPS - Butter garlic flavor",
@@ -968,7 +980,9 @@ const itemList = [
       carbs: 0,
       protein: 0
     },
-    category: "sides"
+    category: "sides",
+    rating: 3,
+    stock: 0,
   },
   {
     name: "Mix2Pizza DIPS - Buffalo ranch",
@@ -981,7 +995,9 @@ const itemList = [
       carbs: 3,
       protein: 2
     },
-    category: "sides"
+    category: "sides",
+    rating: 3,
+    stock: 12,
   },
   {
     name: "Mix2Pizza DIPS - Cheezy jalapeño",
@@ -994,7 +1010,9 @@ const itemList = [
       carbs: 3,
       protein: 1
     },
-    category: "sides"
+    category: "sides",
+    rating: 3,
+    stock: 6,
   },
   {
     name: "Mix2Pizza DIPS - Ranch",
@@ -1007,7 +1025,9 @@ const itemList = [
       carbs: 4,
       protein: 2
     },
-    category: "sides"
+    category: "sides",
+    rating: 2,
+    stock: 7,
   }
 ];
 
