@@ -47,7 +47,7 @@ const itemList = [
       mozzarella: "Mozzarella",
       toppingIngredients: ["Salami"],
       cheeseIngredients: [],
-      meatIngredients: ["Beef","Bacon","Pepperoni"],
+      meatIngredients: ["Beef", "Bacon", "Pepperoni"],
     },
     category: "pizza",
     rating: 3,
@@ -99,7 +99,7 @@ const itemList = [
       type: "gross",
       base: "Tomato sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Onions","Mushrooms"],
+      toppingIngredients: ["Onions", "Mushrooms"],
       cheeseIngredients: ["Parmesan Cheese"],
       meatIngredients: [],
     },
@@ -118,7 +118,7 @@ const itemList = [
       base: "Tomato sauce",
       mozzarella: "Mozzarella",
       toppingIngredients: ["Pineapple", "Mushrooms"],
-      cheeseIngredients: ["Cheddar Cheese","Fontina Cheese","Blue Cheese","Parmesan Cheese"],
+      cheeseIngredients: ["Cheddar Cheese", "Fontina Cheese", "Blue Cheese", "Parmesan Cheese"],
       meatIngredients: [],
     },
     category: "pizza",
@@ -135,7 +135,7 @@ const itemList = [
       type: "Gross",
       base: "No sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Spinach","Black Olives"],
+      toppingIngredients: ["Spinach", "Black Olives"],
       cheeseIngredients: ["Feta Cheese"],
       meatIngredients: [],
     },
@@ -154,7 +154,7 @@ const itemList = [
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
       toppingIngredients: ["Onions"],
-      cheeseIngredients: ["Cheddar Cheese","Provolone"],
+      cheeseIngredients: ["Cheddar Cheese", "Provolone"],
       meatIngredients: ["Chicken"],
     },
     category: "pizza",
@@ -207,7 +207,7 @@ const itemList = [
       type: "Thin",
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Pesto","Tomatoes"],
+      toppingIngredients: ["Pesto", "Tomatoes"],
       cheeseIngredients: ["Parmesan Cheese"],
       meatIngredients: [],
     },
@@ -226,7 +226,7 @@ const itemList = [
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
       toppingIngredients: ["Mushrooms"],
-      cheeseIngredients: ["Feta Cheese" ],
+      cheeseIngredients: ["Feta Cheese"],
       meatIngredients: ["Sausage"],
     },
     category: "pizza",
@@ -243,7 +243,7 @@ const itemList = [
       type: "Thin",
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Onions","Bell peppers","Mushrooms","Black Olives","Green Olives"],
+      toppingIngredients: ["Onions", "Bell peppers", "Mushrooms", "Black Olives", "Green Olives"],
       cheeseIngredients: ["Feta Cheese"],
       meatIngredients: ["Steak"],
     },
@@ -261,8 +261,8 @@ const itemList = [
       type: "Gross",
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Black Olives","Red Onions","Bell peppers"],
-      cheeseIngredients: ["Fontina Cheese","Asiago Cheese"],
+      toppingIngredients: ["Black Olives", "Red Onions", "Bell peppers"],
+      cheeseIngredients: ["Fontina Cheese", "Asiago Cheese"],
       meatIngredients: ["Shrimp"],
     },
     category: "pizza",
@@ -279,8 +279,8 @@ const itemList = [
       type: "Gross",
       base: "Tomato Sauce",
       mozzarella: "No Mozzarella",
-      toppingIngredients: ["Tomatoes","Garlic"],
-      cheeseIngredients: ["Parmesan Cheese" ],
+      toppingIngredients: ["Tomatoes", "Garlic"],
+      cheeseIngredients: ["Parmesan Cheese"],
       meatIngredients: [],
     },
     category: "pizza",
@@ -298,8 +298,8 @@ const itemList = [
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
       toppingIngredients: ["Fried Egg"],
-      cheeseIngredients: ["Parmesan Cheese" ],
-      meatIngredients: [ "Bacon"],
+      cheeseIngredients: ["Parmesan Cheese"],
+      meatIngredients: ["Bacon"],
     },
     category: "pizza",
     rating: 3,
@@ -315,8 +315,8 @@ const itemList = [
       type: "Gross",
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Arugula","Black Olives"],
-      cheeseIngredients: ["Parmesan Cheese" ],
+      toppingIngredients: ["Arugula", "Black Olives"],
+      cheeseIngredients: ["Parmesan Cheese"],
       meatIngredients: ["Ham"],
     },
     category: "pizza",
@@ -333,7 +333,7 @@ const itemList = [
       type: "Gross",
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
-      toppingIngredients: ["Artichokes","Garlic"],
+      toppingIngredients: ["Artichokes", "Garlic"],
       cheeseIngredients: ["Goat Cheese"],
       meatIngredients: [],
     },
@@ -371,6 +371,7 @@ const itemList = [
       base: "Tomato Sauce",
       mozzarella: "Mozzarella",
       toppingIngredients: ["Bell peppers","Eggplant","Tomatoes","Sweet corn"],
+
       cheeseIngredients: [
         "Fontina Cheese",
         "Asiago Cheese",
@@ -756,7 +757,7 @@ const itemList = [
     rating: 1,
     stock: 10,
   },
-   {
+  {
     name: "Cookie dough brownie made with M&M’S minis chocolate candies",
     image: "https://i.postimg.cc/vmthsH5K/brownie2.jpg",
     price: 3.99,
@@ -766,6 +767,7 @@ const itemList = [
       fat: 15,
       carbs: 40,
       protein: 5,
+      subcategory: "sweet"
       description: "Brownie topped with Cookie Dough Frosting and M&M’S® MINIS Chocolate Candies",
     },
     category: "sides",
@@ -782,12 +784,46 @@ const itemList = [
       fat: 10,
       carbs: 35,
       protein: 3,
+      subcategory: "sweet"
       description: "Brownie topped with Cookie Dough Frosting and TWIX® Cookie Bar Pieces",
     },
     category: "sides",
     rating: 4,
     stock: 8,
   },
+  {
+    name: "Tillamook Old-Fashioned Vanilla Ice Cream, 48 oz",
+    image: "https://i.postimg.cc/HnJK2qct/vainila.jpg",
+    price: 4.84,
+    description: {},
+    detail: {
+      calories: 210,
+      fat: 17,
+      carbs: 22,
+      protein: 4,
+      subcategory: "sweet"
+    },
+    category: "sides",
+    rating: 3,
+    stock: 11,
+  },
+  {
+    name: "Tillamook Mudslide Ice Cream, 48 oz",
+    image: "https://i.postimg.cc/NMp7NtKr/tillamook.jpg",
+    price: 4.84,
+    description: {},
+    detail: {
+      calories: 260,
+      fat: 16,
+      carbs: 26,
+      protein: 4,
+      subcategory: "sweet"
+    },
+    category: "sides",
+    rating: 4,
+    stock: 7,
+  },
+
 
   // Ejemplo 1: Cheesecake de fresa
   // {
@@ -843,6 +879,7 @@ const itemList = [
       fat: 35,
       carbs: 3,
       protein: 47,
+      subcategory: "salad"
       description: "Traditionally seasoned oven roasted wings"
     },
     category: "sides",
@@ -859,7 +896,9 @@ const itemList = [
       fat: 35,
       carbs: 32,
       protein: 48,
+      subcategory: "salad"
       description: "Oven roasted wings with a sweet traditional BBQ sauce"
+
     },
     category: "sides",
     rating: 4,
@@ -875,7 +914,9 @@ const itemList = [
       fat: 49,
       carbs: 7,
       protein: 49,
+      subcategory: "salad"
       description: "Oven roasted wings with a creamy Garlic Parmesan sauce"
+
     },
     category: "sides",
     rating: 2,
@@ -891,7 +932,9 @@ const itemList = [
       fat: 0,
       carbs: 7,
       protein: 1,
+      subcategory: "dip"
       description: "Tomato dipping sauce with a special blend of tasty herbs and spices",
+
     },
     category: "sides",
     rating: 4,
@@ -907,7 +950,9 @@ const itemList = [
       fat: 42,
       carbs: 0,
       protein: 0,
+      subcategory: "dip"
       description: "Butter and garlic flavored dipping sauce",
+
     },
     category: "sides",
     rating: 3,
@@ -923,7 +968,9 @@ const itemList = [
       fat: 24,
       carbs: 3,
       protein: 2,
+      subcategory: "dip"
       description: "Flavorful Buffalo ranch dipping sauce",
+
     },
     category: "sides",
     rating: 3,
@@ -939,7 +986,9 @@ const itemList = [
       fat: 22,
       carbs: 3,
       protein: 1,
+      subcategory: "dip"
       description: "Flavorful cheesy-jalapeño dipping sauce",
+
     },
     category: "sides",
     rating: 3,
@@ -955,7 +1004,9 @@ const itemList = [
       fat: 24,
       carbs: 4,
       protein: 2,
+      subcategory: "dip"
       description: "Flavorful ranch dipping sauce",
+
     },
     category: "sides",
     rating: 2,
