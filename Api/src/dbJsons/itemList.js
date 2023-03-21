@@ -767,7 +767,7 @@ const itemList = [
       fat: 15,
       carbs: 40,
       protein: 5,
-      subcategory: "sweet"
+      subcategory: "sweet",
       description: "Brownie topped with Cookie Dough Frosting and M&M’S® MINIS Chocolate Candies",
     },
     category: "sides",
@@ -784,7 +784,7 @@ const itemList = [
       fat: 10,
       carbs: 35,
       protein: 3,
-      subcategory: "sweet"
+      subcategory: "sweet",
       description: "Brownie topped with Cookie Dough Frosting and TWIX® Cookie Bar Pieces",
     },
     category: "sides",
@@ -801,11 +801,46 @@ const itemList = [
       fat: 17,
       carbs: 22,
       protein: 4,
-      subcategory: "sweet"
+      subcategory: "icecream",
+      description: "With a smooth, creamy texture and vanilla flavor, this simple, yet rich old-fashioned vanilla ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls."
     },
     category: "sides",
     rating: 3,
     stock: 11,
+  },
+  {
+    name: "Tillamook Chocolate Chip Cookie Dough Ice Cream, 48 oz",
+    image: "https://i.postimg.cc/wvrM1Y3b/chocolatechip.jpg",
+    price: 4.84,
+    description: {},
+    detail: {
+      calories: 240,
+      fat: 13,
+      carbs: 30,
+      protein: 3,
+      subcategory: "icecream",
+      description: " With the smooth, creamy texture of cookie dough ice cream, delicious chocolate chip bits and cookie dough bites, this simple, yet rich cookie ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls."
+    },
+    category: "sides",
+    rating: 3,
+    stock: 7,
+  },
+  {
+    name: "Tillamook Original Premium Cookies And Cream Ice Cream, 48 fl oz",
+    image: "https://i.postimg.cc/63qT6p6v/oreocream.jpg",
+    price: 4.84,
+    description: {},
+    detail: {
+      calories: 230,
+      fat: 13,
+      carbs: 27,
+      protein: 4,
+      subcategory: "icecream",
+      description: "Extra creamy Tillamook Cookies and Cream Ice Cream has a smooth texture and decadent mix of rich flavors that will make you fall in love with dessert over and over again. Made without compromise, Tillamook Ice Cream contains no artificial flavors or preservatives and is made with milk from cows not treated with rBST*."
+    },
+    category: "sides",
+    rating: 3,
+    stock: 7,
   },
   {
     name: "Tillamook Mudslide Ice Cream, 48 oz",
@@ -817,7 +852,8 @@ const itemList = [
       fat: 16,
       carbs: 26,
       protein: 4,
-      subcategory: "sweet"
+      subcategory: "icecream",
+      description: "With the smooth, creamy texture of Tillamook Chocolate Ice Cream, fudge and chocolate chips, this simple, yet rich chocolate ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls. "
     },
     category: "sides",
     rating: 4,
@@ -879,7 +915,7 @@ const itemList = [
       fat: 35,
       carbs: 3,
       protein: 47,
-      subcategory: "salad"
+      subcategory: "salad",
       description: "Traditionally seasoned oven roasted wings"
     },
     category: "sides",
@@ -896,7 +932,7 @@ const itemList = [
       fat: 35,
       carbs: 32,
       protein: 48,
-      subcategory: "salad"
+      subcategory: "salad",
       description: "Oven roasted wings with a sweet traditional BBQ sauce"
 
     },
@@ -914,7 +950,7 @@ const itemList = [
       fat: 49,
       carbs: 7,
       protein: 49,
-      subcategory: "salad"
+      subcategory: "salad",
       description: "Oven roasted wings with a creamy Garlic Parmesan sauce"
 
     },
@@ -932,7 +968,7 @@ const itemList = [
       fat: 0,
       carbs: 7,
       protein: 1,
-      subcategory: "dip"
+      subcategory: "dip",
       description: "Tomato dipping sauce with a special blend of tasty herbs and spices",
 
     },
@@ -950,7 +986,7 @@ const itemList = [
       fat: 42,
       carbs: 0,
       protein: 0,
-      subcategory: "dip"
+      subcategory: "dip",
       description: "Butter and garlic flavored dipping sauce",
 
     },
@@ -968,7 +1004,7 @@ const itemList = [
       fat: 24,
       carbs: 3,
       protein: 2,
-      subcategory: "dip"
+      subcategory: "dip",
       description: "Flavorful Buffalo ranch dipping sauce",
 
     },
@@ -986,7 +1022,7 @@ const itemList = [
       fat: 22,
       carbs: 3,
       protein: 1,
-      subcategory: "dip"
+      subcategory: "dip",
       description: "Flavorful cheesy-jalapeño dipping sauce",
 
     },
@@ -1004,8 +1040,9 @@ const itemList = [
       fat: 24,
       carbs: 4,
       protein: 2,
-      subcategory: "dip"
+      subcategory: "dip",
       description: "Flavorful ranch dipping sauce",
+
 
     },
     category: "sides",
