@@ -15,7 +15,7 @@ const createUser = async (name, lastName, email, password) => {
 const userLogin = async (correo,psw) =>{
      if(!correo || !psw) throw new Error('Username and password are required');
      const foundUser =await  User.findOne({ where: { email : correo } });
-     if(!foundUser) throw new Error('no existe un usuario con ese mail');
+     if(!foundUser) throw new Error('We cannot find an account with that email address');
      if(foundUser.password === psw){
         const accesToken = jwt.sign(
             {"email":foundUser.email},
@@ -33,7 +33,7 @@ const userLogin = async (correo,psw) =>{
         const result = await foundUser.save()
         return {accesToken,refreshToken}
      }else{
-        throw new Error('contraseñña incorrecta');
+        throw new Error('Incorrect password');
      }
 }
 
@@ -42,12 +42,12 @@ const refreshTokenController = async (cookies)=>{
     const refreshTokenUser = cookies.jwt;
     let accesToken
     const foundUser = await User.findOne({ where: { refreshToken : refreshTokenUser } });
-    if(!foundUser) throw new Error('No encontrado');
+    if(!foundUser) throw new Error('Not found');
     jwt.verify(
         refreshTokenUser,
         process.env.REFRESH_TOKEN_SECRET,
         (err,decoded)=>{
-            if(err || foundUser.email !== decoded.email) throw new Error('No encontrado');
+            if(err || foundUser.email !== decoded.email) throw new Error('Not found');
              accesToken = jwt.sign(
                 {"email":decoded.email},
                 process.env.ACCESS_TOKEN_SECRET,
