@@ -6,8 +6,9 @@ const getAllUsers = async () => {
     return await User.findAll();
 };
 
-const createUser = async (name, lastName, email, password) => {
-    return await User.create({ name, lastName, email, password });
+const createUser = async (name, lastName, email, password, birthday) => {
+    birthday.split("T").join(" ")
+    return await User.create({ name, lastName, email, password, birthday });
 };
 
 
