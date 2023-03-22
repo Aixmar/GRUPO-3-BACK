@@ -17,8 +17,22 @@ const getPizza = async (id) => {
   return await Pizza.findByPk(id);
 };
 
+const updatePizza = async (id,body) => {
+  await Pizza.update(body,{
+    where: {
+      id
+    }
+  })
+}
+
+const deletePizza = async (id) => {
+  await Pizza.destroy({where : {id}})
+}
+
 module.exports = {
   getAllPizzas,
   createPizza,
   getPizza,
+  updatePizza,
+  deletePizza,
 };
