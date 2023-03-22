@@ -32,6 +32,20 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+
+      accessToken :{
+        type:DataTypes.STRING 
+      },
+
+
+      birthday: {
+        type: DataTypes.STRING,
+      },
+
+      refreshToken: {
+        type: DataTypes.STRING,
+      },
+
     },
     { timestamps: false }
   );

@@ -13,7 +13,7 @@ const allIngredients = async (name) => {
           }
       }
   });
-  if(!ingredients.length) throw new Error('No se encontro ningun pais con el nombre ingresado');
+  if(!ingredients.length) throw new Error(`Ingredient with name ${name} does not exist`);
   }
   return ingredients
 };
