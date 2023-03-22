@@ -12,15 +12,15 @@ module.exports = (sequelize) => {
         autoIncrement: true,
       },
 
-      // name: {
-      //   type: DataTypes.STRING,
-      //   allowNull: false,
-      // },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
-      // lastName: {
-      //   type: DataTypes.STRING,
-      //   allowNull: false,
-      // },
+      lastName: {
+        type: DataTypes.STRING,
+        allowNull: false,
+      },
 
       email: {
         type: DataTypes.STRING,
@@ -32,6 +32,11 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+
+      birthday: {
+        type: DataTypes.STRING,
+      },
+
       refreshToken: {
         type: DataTypes.STRING,
       },

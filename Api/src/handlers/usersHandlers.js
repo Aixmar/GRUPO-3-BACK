@@ -16,10 +16,10 @@ const getAllUsersHandler = async (req, res) => {
 
 const postUserHandler = async (req, res) => {
 
-    const { name, lastName, email, password } = req.body;
+    const { name, lastName, email, password, birthday } = req.body;
 
     try {
-        const newUser = await createUser(name, lastName, email, password);
+        const newUser = await createUser(name, lastName, email, password, birthday);
         res.status(200).json(newUser);
     } catch (error) {
         res.status(400).json({ error: error.message });
