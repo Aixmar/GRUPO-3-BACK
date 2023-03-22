@@ -29,7 +29,7 @@ const userLogin = async (correo,psw) =>{
             {expiresIn:'1d'}
         );
 
-        foundUser.refreshToken = refreshToken;
+        foundUser.accessToken = refreshToken;
         const result = await foundUser.save()
         return {accesToken,refreshToken}
      }else{
@@ -40,15 +40,15 @@ const userLogin = async (correo,psw) =>{
 const refreshTokenController = async (cookies)=>{
     if(!cookies?.jwt) throw new Error('Forbidden');
     const refreshTokenUser = cookies.jwt;
-    let accesToken
-    const foundUser = await User.findOne({ where: { refreshToken : refreshTokenUser } });
+    let accessToken
+    const foundUser = await User.findOne({ where: { accessToken : refreshTokenUser } });
     if(!foundUser) throw new Error('Not found');
     jwt.verify(
         refreshTokenUser,
         process.env.REFRESH_TOKEN_SECRET,
         (err,decoded)=>{
             if(err || foundUser.email !== decoded.email) throw new Error('Not found');
-             accesToken = jwt.sign(
+             accessToken = jwt.sign(
                 {"email":decoded.email},
                 process.env.ACCESS_TOKEN_SECRET,
                 {expiresIn:'300s'}
@@ -56,7 +56,7 @@ const refreshTokenController = async (cookies)=>{
         }
         
     )
-    return accesToken
+    return accessToken
 }
 
 const logOut = async (res,cookies)=>{

@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
-      refreshToken :{
+      accessToken :{
         type:DataTypes.STRING 
       }
     },
