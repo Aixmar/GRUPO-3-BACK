@@ -33,6 +33,11 @@ module.exports = (sequelize) => {
         allowNull: false,
       },
 
+      accessToken :{
+        type:DataTypes.STRING 
+      },
+
+
       birthday: {
         type: DataTypes.STRING,
       },
@@ -40,6 +45,7 @@ module.exports = (sequelize) => {
       refreshToken: {
         type: DataTypes.STRING,
       },
+
     },
     { timestamps: false }
   );
