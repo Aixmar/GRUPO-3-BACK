@@ -32,7 +32,7 @@ const userLogin = async (correo,psw) =>{
 
         foundUser.accessToken = refreshToken;
         const result = await foundUser.save()
-        return {accesToken,refreshToken}
+        return {foundUser,refreshToken}
      }else{
         throw new Error('Incorrect password');
      }
