@@ -27,7 +27,7 @@ server.use(morgan("dev"));
 
 //-ACCESS_TO_FRONT_END-----------------------//
 server.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "https://quiet-crumble-5af902.netlify.app"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // update to match the domain you will make the request from
   res.header("Access-Control-Allow-Credentials", "true");
   res.header(
     "Access-Control-Allow-Headers",
