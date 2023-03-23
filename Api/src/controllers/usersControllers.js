@@ -15,8 +15,11 @@ const createUser = async (name, lastName, email, password, birthday) => {
 
 const userLogin = async (correo,psw) =>{
      if(!correo || !psw) throw new Error('Username and password are required');
+
      const foundUser =await  User.findOne({ where: { email : correo } });
+
      if(!foundUser) throw new Error('We cannot find an account with that email address');
+     
      if(foundUser.password === psw){
         const accesToken = jwt.sign(
             {"email":foundUser.email},
@@ -31,8 +34,18 @@ const userLogin = async (correo,psw) =>{
         );
 
         foundUser.accessToken = refreshToken;
-        const result = await foundUser.save()
-        return {foundUser,refreshToken}
+
+        const result = await foundUser.save();
+
+        // tomo la info del usuario logueado que voy a enviar al front
+        const loggedInUser = {
+            id: result.dataValues.id,
+            name: result.dataValues.name,
+            email: result.dataValues.email,
+            accessToken: result.dataValues.accessToken
+        }
+        return { loggedInUser: loggedInUser, refreshToken: refreshToken };
+
      }else{
         throw new Error('Incorrect password');
      }

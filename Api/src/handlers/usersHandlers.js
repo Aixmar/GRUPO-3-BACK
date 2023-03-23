@@ -42,10 +42,10 @@ const userByIdHandler = async (req, res) => {
 const postUserLoginHandler = async(req,res)=>{
     const {email,password} = req.body;
     try{
-      const {foundUser,refreshToken} = await userLogin(email,password)
-      
-      res.cookie('jwt',refreshToken,{httpOnly:true,maxAge:24*60*60*1000} )
-      res.status(200).json(foundUser);
+      const { loggedInUser, refreshToken } = await userLogin(email, password);
+      res.cookie('jwt',refreshToken, {httpOnly:true,maxAge:24*60*60*1000} )
+      res.status(200).json(loggedInUser);
+
     }catch(error){
       res.status(400).json({ error: error.message });
     }
