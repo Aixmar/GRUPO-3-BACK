@@ -16,6 +16,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Pepperoni",
@@ -34,6 +35,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Meat lovers",
@@ -52,6 +54,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Hawaiian",
@@ -70,6 +73,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "BBQ chicken",
@@ -88,6 +92,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Veggie",
@@ -106,6 +111,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Four-cheese",
@@ -124,6 +130,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Greek",
@@ -142,6 +149,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Buffalo chicken",
@@ -160,6 +168,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Mushroom",
@@ -178,6 +187,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Spinach and feta",
@@ -196,6 +206,7 @@ const itemList = [
     category: "pizza",
     rating: 5,
     stock: 0,
+    active:false
   },
   {
     name: "Pesto",
@@ -214,6 +225,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Sausage and mushroom",
@@ -232,6 +244,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Philly cheesesteak",
@@ -250,6 +263,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Seafood",
@@ -268,6 +282,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Roasted garlic and tomato pizza",
@@ -286,6 +301,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Bacon and egg pizza",
@@ -304,6 +320,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Prosciutto and arugula pizza",
@@ -322,6 +339,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Artichoke and goat cheese pizza",
@@ -340,6 +358,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Caramelized onion and bacon pizza",
@@ -359,6 +378,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Roasted Vegetable Pizza",
@@ -381,6 +401,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Chicken and Broccoli Alfredo Pizza",
@@ -404,6 +425,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Mac and Cheese Pizza",
@@ -425,6 +447,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Steak and Blue Cheese Pizza",
@@ -447,6 +470,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Shrimp Scampi Pizza",
@@ -465,6 +489,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Chicken Caesar Salad Pizza",
@@ -483,6 +508,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Green Olive and Sausage Pizza",
@@ -501,6 +527,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Ricotta and Basil Pizza",
@@ -519,6 +546,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Barbecue Bacon Cheeseburger Pizza",
@@ -538,6 +566,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Tuna and Red Onion Pizza",
@@ -556,6 +585,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 1,
+    active:true
   },
   {
     name: "Supreme",
@@ -576,6 +606,7 @@ const itemList = [
     category: "pizza",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "CocaCola 0.6 Lt",
@@ -585,6 +616,7 @@ const itemList = [
     category: "drinks",
     rating: 5,
     stock: 2,
+    active:true
   },
   {
     name: "CocaCola 1.25 Lt",
@@ -594,6 +626,7 @@ const itemList = [
     category: "drinks",
     rating: 4,
     stock: 0,
+    active:false
   },
   {
     name: "CocaCola 2 Lt",
@@ -603,6 +636,7 @@ const itemList = [
     category: "drinks",
     rating: 4,
     stock: 9,
+    active:true
   },
   {
     name: "Diet Coke 0.6 Lt",
@@ -612,6 +646,7 @@ const itemList = [
     category: "drinks",
     rating: 2,
     stock: 5,
+    active:true
   },
   {
     name: "Diet Coke 1 Lt",
@@ -621,6 +656,7 @@ const itemList = [
     category: "drinks",
     rating: 2,
     stock: 5,
+    active:true
   },
   {
     name: "Diet Coke 2 Lt",
@@ -630,6 +666,7 @@ const itemList = [
     category: "drinks",
     rating: 2,
     stock: 5,
+    active:true
   },
   {
     name: "Fanta 0,6 Lt",
@@ -639,6 +676,7 @@ const itemList = [
     category: "drinks",
     rating: 4,
     stock: 5,
+    active:true
   },
   {
     name: "Fanta Zero 0,6 Lt",
@@ -648,6 +686,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 5,
+    active:true
   },
   {
     name: "Fanta 2 Lt",
@@ -657,6 +696,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 5,
+    active:true
   },
   {
     name: "Sprite 0,6 Lt",
@@ -666,6 +706,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Sprite 2 Lt",
@@ -675,6 +716,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Sprite Zero 2 Lt",
@@ -684,6 +726,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Water 0,6 Lt",
@@ -693,6 +736,7 @@ const itemList = [
     category: "drinks",
     rating: 4,
     stock: 10,
+    active:true
   },
   {
     name: "Sparking Water 0,6 Lt",
@@ -702,6 +746,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 5,
+    active:true
   },
   {
     name: "Peach Sparkling Water 1 Lt",
@@ -711,6 +756,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 3,
+    active:true
   },
   {
     name: "Apple Sparkling Water 1 Lt",
@@ -720,6 +766,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 5,
+    active:true
   },
   {
     name: "Lime Sparkling Water 1 Lt",
@@ -729,6 +776,7 @@ const itemList = [
     category: "drinks",
     rating: 3,
     stock: 8,
+    active:true
   },
   {
     name: "Strawberry Fanta 0,6 Lt",
@@ -738,6 +786,7 @@ const itemList = [
     category: "drinks",
     rating: 1,
     stock: 15,
+    active:true
   },
   {
     name: "RockStar Orange",
@@ -747,6 +796,7 @@ const itemList = [
     category: "drinks",
     rating: 2,
     stock: 12,
+    active:true
   },
   {
     name: "Vitamin Water 0,6 Lt",
@@ -756,6 +806,7 @@ const itemList = [
     category: "drinks",
     rating: 1,
     stock: 10,
+    active:true
   },
   {
     name: "Cookie dough brownie made with M&M’S minis chocolate candies",
@@ -773,6 +824,7 @@ const itemList = [
     category: "sides",
     rating: 5,
     stock: 11,
+    active:true
   },
   {
     name: "Cookie dough brownie made with TWIX cookie bar pieces",
@@ -790,6 +842,7 @@ const itemList = [
     category: "sides",
     rating: 4,
     stock: 8,
+    active:true
   },
   {
     name: "Tillamook Old-Fashioned Vanilla Ice Cream, 48 oz",
@@ -807,6 +860,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 11,
+    active:true
   },
   {
     name: "Tillamook Chocolate Chip Cookie Dough Ice Cream, 48 oz",
@@ -824,6 +878,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 7,
+    active:true
   },
   {
     name: "Tillamook Original Premium Cookies And Cream Ice Cream, 48 fl oz",
@@ -841,6 +896,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 7,
+    active:true
   },
   {
     name: "Tillamook Mudslide Ice Cream, 48 oz",
@@ -858,6 +914,7 @@ const itemList = [
     category: "sides",
     rating: 4,
     stock: 7,
+    active:true
   },
 
 
@@ -921,6 +978,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 10,
+    active:true
   },
   {
     name: "Mix2Pizza WINGS – BBQ",
@@ -939,6 +997,7 @@ const itemList = [
     category: "sides",
     rating: 4,
     stock: 9,
+    active:true
   },
   {
     name: "Mix2Pizza WINGS – Garlic parmesan",
@@ -957,6 +1016,7 @@ const itemList = [
     category: "sides",
     rating: 2,
     stock: 0,
+    active:false
   },
   {
     name: "Mix2Pizza DIPS - Crazy sauce",
@@ -975,6 +1035,7 @@ const itemList = [
     category: "sides",
     rating: 4,
     stock: 10,
+    active:true
   },
   {
     name: "Mix2Pizza DIPS - Butter garlic flavor",
@@ -993,6 +1054,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 0,
+    active:false
   },
   {
     name: "Mix2Pizza DIPS - Buffalo ranch",
@@ -1011,6 +1073,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 12,
+    active:true
   },
   {
     name: "Mix2Pizza DIPS - Cheezy jalapeño",
@@ -1029,6 +1092,7 @@ const itemList = [
     category: "sides",
     rating: 3,
     stock: 6,
+    active:true
   },
   {
     name: "Mix2Pizza DIPS - Ranch",
@@ -1048,6 +1112,7 @@ const itemList = [
     category: "sides",
     rating: 2,
     stock: 7,
+    active:true
   }
 ];
 
