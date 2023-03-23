@@ -34,6 +34,7 @@ const userLogin = async (correo,psw) =>{
         );
 
         foundUser.accessToken = refreshToken;
+
         const result = await foundUser.save();
 
         // tomo la info del usuario logueado que voy a enviar al front
@@ -44,6 +45,7 @@ const userLogin = async (correo,psw) =>{
             accessToken: result.dataValues.accessToken
         }
         return { loggedInUser: loggedInUser, refreshToken: refreshToken };
+
      }else{
         throw new Error('Incorrect password');
      }
