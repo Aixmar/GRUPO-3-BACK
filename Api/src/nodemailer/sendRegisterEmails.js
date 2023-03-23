@@ -66,6 +66,7 @@ const sendRegisterMail = (userEmail) => {
             margin: 0 auto;
             padding: 20px;
             text-align: center;
+            width: 400px;
           }
         </style>
       </head>
