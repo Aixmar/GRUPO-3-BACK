@@ -20,8 +20,7 @@ const sendRegisterMail = (userEmail) => {
 
   const mailOptions = {
     from: "mix2pizza@outlook.com",
-    to: "nicoo.valor@gmail.com",
-    // to: userEmail,
+    to: userEmail,
     subject: "Registered",
     html: `
     <html>
