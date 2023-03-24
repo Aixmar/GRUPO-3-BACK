@@ -49,9 +49,9 @@ module.exports = (sequelize) => {
       image: {
         type: DataTypes.STRING,
       },
-
-
-
+      cart: {
+        type: DataTypes.JSONB
+      }
     },
     { timestamps: false }
   );

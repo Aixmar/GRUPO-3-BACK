@@ -11,13 +11,23 @@ const createUser = async (name, lastName, email, password, birthday, image) => {
     return await User.create({ name, lastName, email, password, birthday , image });
 };
 
-
 const updateImage = async (urlImage, userId) => {
     const user = await  User.findByPk(userId);
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
     user.image = urlImage
+    //para guardar los datos
+    await user.save();
+    return user;
+};
+
+const putUpdateCartController = async (cart , userId) => {
+    const user = await  User.findByPk(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    user.cart = cart
     //para guardar los datos
     await user.save();
     return user;
@@ -105,5 +115,6 @@ module.exports = {
     refreshTokenController,
     logOut,
     updateImage,
+    putUpdateCartController,
 };
 
