@@ -6,12 +6,22 @@ const getAllUsers = async () => {
     return await User.findAll();
 };
 
-const createUser = async (name, lastName, email, password, birthday) => {
+const createUser = async (name, lastName, email, password, birthday, image) => {
     birthday.split("T").join(" ")
-    return await User.create({ name, lastName, email, password, birthday });
+    return await User.create({ name, lastName, email, password, birthday , image });
 };
 
 
+const updateImage = async (urlImage, userId) => {
+    const user = await  User.findByPk(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    user.image = urlImage
+    //para guardar los datos
+    await user.save();
+    return user;
+};
 
 const userLogin = async (correo,psw) =>{
      if(!correo || !psw) throw new Error('Username and password are required');
@@ -38,13 +48,13 @@ const userLogin = async (correo,psw) =>{
         const result = await foundUser.save();
 
         // tomo la info del usuario logueado que voy a enviar al front
-        const loggedInUser = {
-            id: result.dataValues.id,
-            name: result.dataValues.name,
-            email: result.dataValues.email,
-            accessToken: result.dataValues.accessToken
-        }
-        return { loggedInUser: loggedInUser, refreshToken: refreshToken };
+        // const loggedInUser = {
+        //     id: result.dataValues.id,
+        //     name: result.dataValues.name,
+        //     email: result.dataValues.email,
+        //     accessToken: result.dataValues.accessToken
+        // }
+        return { loggedInUser: result.dataValues, refreshToken: refreshToken };
 
      }else{
         throw new Error('Incorrect password');
@@ -93,6 +103,7 @@ module.exports = {
     createUser,
     userLogin,
     refreshTokenController,
-    logOut
+    logOut,
+    updateImage,
 };
 
