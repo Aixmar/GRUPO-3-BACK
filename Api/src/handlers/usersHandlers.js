@@ -1,4 +1,4 @@
-const { getAllUsers, createUser,userLogin,refreshTokenController,logOut } = require('../controllers/usersControllers');
+const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage } = require('../controllers/usersControllers');
 require("dotenv").config();
 const jwt = require('jsonwebtoken')
 
@@ -16,11 +16,22 @@ const getAllUsersHandler = async (req, res) => {
 
 const postUserHandler = async (req, res) => {
 
-    const { name, lastName, email, password, birthday } = req.body;
+    const { name, lastName, email, password, birthday, image } = req.body;
 
     try {
-        const newUser = await createUser(name, lastName, email, password, birthday);
+        const newUser = await createUser(name, lastName, email, password, birthday, image);
         res.status(200).json(newUser);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    };
+  };
+
+  const putUserHandler = async (req, res) => {
+    const {urlImage, userId } = req.body;
+
+    try {
+        const user = await updateImage(urlImage, userId);
+        res.status(200).json(user);
     } catch (error) {
         res.status(400).json({ error: error.message });
     };
@@ -79,5 +90,6 @@ module.exports = {
     userByIdHandler,
     postUserLoginHandler,
     refreshTokenHandler,
-    logOutHandler
+    logOutHandler,
+    putUserHandler,
 };
