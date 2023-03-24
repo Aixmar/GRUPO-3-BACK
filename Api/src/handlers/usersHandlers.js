@@ -1,42 +1,53 @@
-const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage } = require('../controllers/usersControllers');
+const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController } = require('../controllers/usersControllers');
 require("dotenv").config();
 const jwt = require('jsonwebtoken')
 
 
-
 const getAllUsersHandler = async (req, res) => {
-    try {
-        const allUsers = await getAllUsers();
-      res.status(200).json(allUsers);
-    } catch (error) {
-      res.status(400).json({ error: error.message });
-    }
-  };
+  try {
+    const allUsers = await getAllUsers();
+    res.status(200).json(allUsers);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 
 const postUserHandler = async (req, res) => {
 
     const { name, lastName, email, password, birthday, image } = req.body;
-
+    
     try {
-        const newUser = await createUser(name, lastName, email, password, birthday, image);
-        res.status(200).json(newUser);
+      const newUser = await createUser(name, lastName, email, password, birthday, image);
+      res.status(200).json(newUser);
     } catch (error) {
-        res.status(400).json({ error: error.message });
+      res.status(400).json({ error: error.message });
     };
   };
-
+  
   const putUserHandler = async (req, res) => {
     const {urlImage, userId } = req.body;
-
+    
     try {
-        const user = await updateImage(urlImage, userId);
-        res.status(200).json(user);
+      const user = await updateImage(urlImage, userId);
+      res.status(200).json(user);
     } catch (error) {
-        res.status(400).json({ error: error.message });
+      res.status(400).json({ error: error.message });
     };
   };
+   
+  const putUpdateCart =async (req, res) => {
+    const {cart , userId} = req.body;
 
+    try {
+      const user = await putUpdateCartController(cart, userId)
+      console.log(cart, userId);
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
+  
   
 const userByIdHandler = async (req, res) => {
 
@@ -92,4 +103,5 @@ module.exports = {
     refreshTokenHandler,
     logOutHandler,
     putUserHandler,
+    putUpdateCart,
 };
