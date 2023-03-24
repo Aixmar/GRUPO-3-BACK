@@ -1,4 +1,4 @@
-const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController } = require('../controllers/usersControllers');
+const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController, getUserById } = require('../controllers/usersControllers');
 require("dotenv").config();
 const jwt = require('jsonwebtoken')
 
@@ -49,12 +49,10 @@ const postUserHandler = async (req, res) => {
   };
   
   
-const userByIdHandler = async (req, res) => {
-
+const getUserByIdHandler = async (req, res) => {
   const { id } = req.params;
-
   try {
-      const user = await userById(id);
+      const user = await getUserById(id);
       res.status(200).json(user);
   } catch (error) {
       res.status(400).json({ error: error.message });
@@ -98,7 +96,7 @@ const logOutHandler = async (req,res)=>{
 module.exports = {
     getAllUsersHandler,
     postUserHandler,
-    userByIdHandler,
+    getUserByIdHandler,
     postUserLoginHandler,
     refreshTokenHandler,
     logOutHandler,
