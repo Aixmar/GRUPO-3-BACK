@@ -6,7 +6,7 @@ const { EMAIL, EMAIL_PASSWORD } = process.env;
 const sendBuyMail = (userEmail, items, name) => {
   // Configurar el transportador SMTP para enviar correos electrónicos
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
+    service: "gmail",
     port: 587,
     secure: false,
     auth: {
@@ -16,7 +16,7 @@ const sendBuyMail = (userEmail, items, name) => {
   });
 
   const mailOptions = {
-    from: "mix2pizza@outlook.com",
+    from: "mix2pizza@gmail.com",
     to: userEmail,
     subject: "Item bought",
     html: `

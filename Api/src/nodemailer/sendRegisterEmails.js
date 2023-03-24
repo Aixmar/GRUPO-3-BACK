@@ -9,7 +9,7 @@ const sendRegisterMail = (userEmail) => {
   // Configurar el transportador SMTP para enviar correos electrónicos
   const transporter = nodemailer.createTransport({
     //service: "gmail",
-    host: "smtp.office365.com",
+    service: "gmail",
     port: 587,
     secure: false,
     auth: {
@@ -19,7 +19,7 @@ const sendRegisterMail = (userEmail) => {
   });
 
   const mailOptions = {
-    from: "mix2pizza@outlook.com",
+    from: "mix2pizza@gmail.com",
     to: userEmail,
     subject: "Registered",
     html: `
