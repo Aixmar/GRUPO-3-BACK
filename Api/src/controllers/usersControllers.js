@@ -5,7 +5,9 @@ const jwt = require('jsonwebtoken')
 const getAllUsers = async () => {
     return await User.findAll();
 };
-
+const getUserById = async (id) => {
+    return await User.findByPk(id);
+};
 const createUser = async (name, lastName, email, password, birthday, image) => {
     birthday.split("T").join(" ")
     return await User.create({ name, lastName, email, password, birthday , image });
@@ -116,5 +118,6 @@ module.exports = {
     logOut,
     updateImage,
     putUpdateCartController,
+    getUserById
 };
 
