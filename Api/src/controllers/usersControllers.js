@@ -8,9 +8,9 @@ const getAllUsers = async () => {
 const getUserById = async (id) => {
     return await User.findByPk(id);
 };
-const createUser = async (name, lastName, email, password, birthday, image) => {
+const createUser = async (name, lastName, email, password, birthday, image, cart) => {
     birthday.split("T").join(" ")
-    return await User.create({ name, lastName, email, password, birthday , image });
+    return await User.create({ name, lastName, email, password, birthday , image , cart});
 };
 
 const updateImage = async (urlImage, userId) => {
