@@ -97,7 +97,9 @@ const sendBuyMail = (userEmail, items, name) => {
 
         </table>
         <div class="total">
-            <strong>Total a pagar: ${items.total}</strong>
+            <strong>Total a pagar: ${items
+              .map((item) => item.price * item.quantity)
+              .reduce((acc, curr) => acc + curr)}</strong>
         </div>
         <p>Gracias por elegir Mix2Pizza.</p>
     </body>
