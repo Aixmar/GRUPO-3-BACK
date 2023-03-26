@@ -24,6 +24,27 @@ const updateImage = async (urlImage, userId) => {
     return user;
 };
 
+const updateEmail = async (email, userId) => {
+    const user = await getUserById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    user.email = email;
+    //para guardar los datos
+    await user.save();
+    return user;
+};
+const updatePassword = async (password, userId) => {
+    const user = await getUserById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    user.password = password;
+    //para guardar los datos
+    await user.save();
+    return user;
+};
+
 const putUpdateCartController = async (cart , userId) => {
     const user = await  User.findByPk(userId);
     if (!user) {
@@ -118,6 +139,8 @@ module.exports = {
     logOut,
     updateImage,
     putUpdateCartController,
-    getUserById
+    getUserById,
+    updateEmail,
+    updatePassword
 };
 
