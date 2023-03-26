@@ -6,8 +6,8 @@ const getAllPizzas = async () => {
   });
 };
 
-const createPizza = async (name, image, userId, ingredientIds, price, vegetarian, detail) => {
-  const newPizza = await Pizza.create({ name, image, price, vegetarian, detail });
+const createPizza = async (name, image, userId, ingredientIds, price, vegetarian, detail, active, category) => {
+  const newPizza = await Pizza.create({ name, image, price, vegetarian, detail, active, category });
   await newPizza.setUser(userId);
   await newPizza.addIngredients(ingredientIds);
   return newPizza;
