@@ -1,5 +1,5 @@
 const mercadopago = require("mercadopago");
-mercadopago.configurations.setAccessToken("TEST-315277105411021-032214-d5261464821c609b22c09d9c31f280ce-1336492813");
+mercadopago.configurations.setAccessToken("TEST-4003612588175736-032118-8f90a1dce97c31f4a792070beb7eea3a-1335802344");
 
 const postPaymentHandler = async (req, res, next) => {
 
