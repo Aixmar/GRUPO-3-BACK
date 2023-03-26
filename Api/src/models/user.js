@@ -51,6 +51,9 @@ module.exports = (sequelize) => {
       },
       cart: {
         type: DataTypes.JSONB
+      },
+      rol:{
+        type: DataTypes.STRING,
       }
     },
     { timestamps: false }
