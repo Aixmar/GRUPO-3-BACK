@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const usersRouter = Router();
-const {putUpdateCart, getAllUsersHandler, postUserHandler, getUserByIdHandler,postUserLoginHandler,refreshTokenHandler ,logOutHandler,putUserHandler} = require('../handlers/usersHandlers');
+const {putUpdateCart, getAllUsersHandler, postUserHandler, getUserByIdHandler,postUserLoginHandler,refreshTokenHandler ,logOutHandler,putUserHandler, updateEmailHandler, updatePasswordHandler} = require('../handlers/usersHandlers');
 
 usersRouter.get('/', getAllUsersHandler);
 // usersRouter.get('/:id', userByIdHandler);
@@ -8,6 +8,8 @@ usersRouter.get('/', getAllUsersHandler);
 usersRouter.post('/', postUserHandler);
 usersRouter.put('/image', putUserHandler);
 usersRouter.put('/updateCart', putUpdateCart);
+usersRouter.put('/email', updateEmailHandler);
+usersRouter.put('/password', updatePasswordHandler);
 usersRouter.post('/login', postUserLoginHandler);
 usersRouter.get('/refresh', refreshTokenHandler);
 usersRouter.get('/logout', logOutHandler);

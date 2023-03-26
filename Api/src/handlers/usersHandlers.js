@@ -1,4 +1,4 @@
-const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController, getUserById } = require('../controllers/usersControllers');
+const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController, getUserById, updateEmail, updatePassword } = require('../controllers/usersControllers');
 require("dotenv").config();
 const jwt = require('jsonwebtoken')
 
@@ -38,16 +38,33 @@ const postUserHandler = async (req, res) => {
    
   const putUpdateCart =async (req, res) => {
     const {cart , userId} = req.body;
-
     try {
       const user = await putUpdateCartController(cart, userId)
-      console.log(cart, userId);
       res.status(200).json(user);
     } catch (error) {
       res.status(400).json({ error: error.message });
     }
   };
+  const updateEmailHandler =async (req, res) => {
+    const {email , userId} = req.body;
+    try {
+      const user = await updateEmail(email, userId);
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
+  const updatePasswordHandler =async (req, res) => {
+    const {password , userId} = req.body;
+
+    try {
+      const user = await updatePassword(password, userId)
   
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
   
 const getUserByIdHandler = async (req, res) => {
   const { id } = req.params;
@@ -102,4 +119,6 @@ module.exports = {
     logOutHandler,
     putUserHandler,
     putUpdateCart,
+    updateEmailHandler,
+    updatePasswordHandler
 };
