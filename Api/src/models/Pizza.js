@@ -19,7 +19,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
       price: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.INTEGER,
         allowNull: true,
       },
       vegetarian: {
