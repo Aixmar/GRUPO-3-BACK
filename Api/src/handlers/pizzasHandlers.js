@@ -16,11 +16,10 @@ const getPizzasHandler = async (req, res) => {
 };
 
 const postPizzaHandler = async (req, res) => {
-  const { name, image, userId, ingredientIds, detail, price, vegetarian } = req.body;
-  console.log('new pizza----->', req.body);
+  const { name, image, userId, ingredientIds, detail, price, vegetarian, active, category } = req.body;
 
   try {
-    const newPizza = await createPizza(name, image, userId, ingredientIds, price, vegetarian, detail);
+    const newPizza = await createPizza(name, image, userId, ingredientIds, price, vegetarian, detail, active, category);
     res.status(200).json(newPizza);
   } catch (error) {
     res.status(400).json({ error: error.message });

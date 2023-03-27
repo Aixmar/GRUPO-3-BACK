@@ -46,6 +46,20 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
 
+      image: {
+        type: DataTypes.STRING,
+      },
+      cart: {
+        type: DataTypes.JSONB
+      },
+
+      previusPurchase:{
+        type: DataTypes.JSONB
+      },
+
+      rol:{
+        type: DataTypes.STRING,
+      }
     },
     { timestamps: false }
   );

@@ -19,7 +19,7 @@ module.exports = (sequelize) => {
         type: DataTypes.STRING,
       },
       price: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.INTEGER,
         allowNull: true,
       },
       vegetarian: {
@@ -41,6 +41,10 @@ module.exports = (sequelize) => {
       stock: {
         type: DataTypes.INTEGER,
         allowNull: true,
+      },
+      active:{
+        type: DataTypes.BOOLEAN,
+        allowNull:false
       }
     },
     { timestamps: false }
