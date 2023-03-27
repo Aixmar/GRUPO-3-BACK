@@ -1,4 +1,4 @@
-const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController, getUserById, updateEmail, updatePassword } = require('../controllers/usersControllers');
+const { getAllUsers, createUser,userLogin,refreshTokenController,logOut, updateImage, putUpdateCartController, getUserById, updateEmail, updatePassword, putUpdatePurchaseController } = require('../controllers/usersControllers');
 require("dotenv").config();
 const jwt = require('jsonwebtoken')
 
@@ -15,10 +15,10 @@ const getAllUsersHandler = async (req, res) => {
 
 const postUserHandler = async (req, res) => {
 
-    const { name, lastName, email, password, birthday, image, cart,rol } = req.body;
+    const { name, lastName, email, password, birthday, image, cart,rol,previusPurchase } = req.body;
     
     try {
-      const newUser = await createUser(name, lastName, email, password, birthday, image, cart,rol);
+      const newUser = await createUser(name, lastName, email, password, birthday, image, cart,rol,previusPurchase);
       res.status(200).json(newUser);
     } catch (error) {
       res.status(400).json({ error: error.message });
@@ -45,6 +45,17 @@ const postUserHandler = async (req, res) => {
       res.status(400).json({ error: error.message });
     }
   };
+
+  const putUpdatePurchase =async (req, res) => {
+    const {cart, userId} = req.body;
+    try {
+      const user = await putUpdatePurchaseController(cart, userId)
+      res.status(200).json(user);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
+    }
+  };
+
   const updateEmailHandler =async (req, res) => {
     const {email , userId} = req.body;
     try {
@@ -120,5 +131,6 @@ module.exports = {
     putUserHandler,
     putUpdateCart,
     updateEmailHandler,
-    updatePasswordHandler
+    updatePasswordHandler,
+    putUpdatePurchase,
 };

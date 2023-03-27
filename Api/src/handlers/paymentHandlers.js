@@ -12,7 +12,7 @@ const postPaymentHandler = async (req, res, next) => {
   //   res.send('Pago procesado exitosamente');
   // })
   .then((response) => {
-    console.log('ACAAAAAAAa', response);
+    // console.log('ACAAAAAAAa', response);
     const { status, status_detail, id } = response.body;
     console.log('ACAAAAAAAa', id);
     res.status(response.status).json({ status, status_detail, id });
