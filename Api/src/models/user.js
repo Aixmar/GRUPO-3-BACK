@@ -52,6 +52,11 @@ module.exports = (sequelize) => {
       cart: {
         type: DataTypes.JSONB
       },
+
+      previusPurchase:{
+        type: DataTypes.JSONB
+      },
+
       rol:{
         type: DataTypes.STRING,
       }

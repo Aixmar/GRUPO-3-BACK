@@ -8,9 +8,9 @@ const getAllUsers = async () => {
 const getUserById = async (id) => {
     return await User.findByPk(id);
 };
-const createUser = async (name, lastName, email, password, birthday, image, cart,rol) => {
+const createUser = async (name, lastName, email, password, birthday, image, cart,rol, previusPurchase) => {
     birthday.split("T").join(" ")
-    return await User.create({ name, lastName, email, password, birthday , image , cart,rol});
+    return await User.create({ name, lastName, email, password, birthday , image , cart,rol, previusPurchase});
 };
 
 const updateImage = async (urlImage, userId) => {
@@ -50,7 +50,20 @@ const putUpdateCartController = async (cart , userId) => {
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    user.cart = cart
+    user.previusPurchase = cart
+    //para guardar los datos
+    await user.save();
+    return user;
+};
+
+const putUpdatePurchaseController = async (cart , userId) => {
+    const user = await  User.findByPk(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    console.log('SSSSSSSSSSSSSSSSSSSSS', cart);
+    user.previusPurchase = user.previusPurchase || [];
+    user.previusPurchase = [...user.previusPurchase, ...cart];
     //para guardar los datos
     await user.save();
     return user;
@@ -139,8 +152,9 @@ module.exports = {
     logOut,
     updateImage,
     putUpdateCartController,
+    putUpdatePurchaseController,
     getUserById,
     updateEmail,
-    updatePassword
+    updatePassword,
 };
 
