@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
         type:DataTypes.BOOLEAN
       },
       price: {
-        type: DataTypes.FLOAT,
+        type: DataTypes.INTEGER,
       },
     },
     { timestamps: false }
