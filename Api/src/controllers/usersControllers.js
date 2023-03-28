@@ -10,6 +10,8 @@ const getUserById = async (id) => {
 };
 const createUser = async (name, lastName, email, password, birthday, image, cart,rol, previusPurchase) => {
     birthday.split("T").join(" ")
+    const foundUser = await User.findOne({ where: { email : email } });
+    if(foundUser) throw new Error('There is already an account registered with that email')
     return await User.create({ name, lastName, email, password, birthday , image , cart,rol, previusPurchase});
 };
 
