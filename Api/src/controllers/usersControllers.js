@@ -50,7 +50,7 @@ const putUpdateCartController = async (cart , userId) => {
     if (!user) {
       return res.status(404).json({ error: 'User not found' });
     }
-    user.previusPurchase = cart
+    user.cart = cart
     //para guardar los datos
     await user.save();
     return user;
