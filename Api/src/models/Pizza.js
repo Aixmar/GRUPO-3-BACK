@@ -30,6 +30,10 @@ module.exports = (sequelize) => {
         type: DataTypes.JSON,
         allowNull: true,
       },
+      reviews: {
+        type: DataTypes.JSON,
+        allowNull: true,
+      },
       category: {
         type: DataTypes.STRING,
         allowNull: true,
