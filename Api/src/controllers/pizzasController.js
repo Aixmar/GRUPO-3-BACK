@@ -25,6 +25,23 @@ const updatePizza = async (id,body) => {
   })
 }
 
+const updateReviewsController = async (id,body) => {
+  console.log(body);
+  const item = await Pizza.findByPk(id);
+  if (!item) {
+    return res.status(404).json({ error: "Item not found" });
+  }
+  
+  item.reviews = item.reviews || [];
+  console.log(item.reviews);
+  item.reviews = [...item.reviews,{ ...body}];
+  console.log(item.reviews);
+    //para guardar los datos
+  await item.save();
+  return item;
+
+};  
+
 const deletePizza = async (id) => {
   await Pizza.destroy({where : {id}})
 }
@@ -35,4 +52,5 @@ module.exports = {
   getPizza,
   updatePizza,
   deletePizza,
+  updateReviewsController
 };
