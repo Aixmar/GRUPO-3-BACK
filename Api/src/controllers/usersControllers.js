@@ -8,6 +8,7 @@ const getAllUsers = async () => {
 const getUserById = async (id) => {
   return await User.findByPk(id);
 };
+
 const createUser = async (
   name,
   lastName,
@@ -21,6 +22,8 @@ const createUser = async (
   favorites,
 ) => {
   birthday.split("T").join(" ");
+  const foundUser = await User.findOne({ where: { email : email } });
+   if(foundUser) throw new Error('There is already an account registered with that email')
   return await User.create({
     name,
     lastName,
@@ -33,6 +36,7 @@ const createUser = async (
     previusPurchase,
     favorites,
   });
+
 };
 
 const updateImage = async (urlImage, userId) => {
