@@ -32,7 +32,6 @@ module.exports = (sequelize) => {
       },
       reviews: {
         type: DataTypes.JSON,
-        allowNull: true,
       },
       category: {
         type: DataTypes.STRING,

@@ -4,6 +4,7 @@ const {
   getPizza,
   updatePizza,
   deletePizza,
+  updateReviewsController
 } = require("../controllers/pizzasController");
 
 const getPizzasHandler = async (req, res) => {
@@ -46,6 +47,16 @@ const putPizzaHandler = async (req,res) => {
     res.status(400).json({error: error.message})
   }
 }
+const putPizzaReviewsHandler = async (req,res) => {
+  const {id} = req.params
+  const body = req.body
+  try {
+    await updateReviewsController(id,body)
+    res.status(200).json({changed:true})
+  } catch (error) {
+    res.status(400).json({error: error.message})
+  }
+}
 
 const deletePizzaHandler = async (req,res) => {
   const {id} = req.params
@@ -63,4 +74,5 @@ module.exports = {
   getPizzaHandler,
   putPizzaHandler,
   deletePizzaHandler,
+  putPizzaReviewsHandler
 };
