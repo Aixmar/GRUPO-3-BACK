@@ -59,6 +59,10 @@ module.exports = (sequelize) => {
 
       rol:{
         type: DataTypes.STRING,
+      },
+
+      favorites: {
+        type: DataTypes.JSONB,
       }
     },
     { timestamps: false }
