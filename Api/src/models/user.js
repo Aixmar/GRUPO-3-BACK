@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 
+
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define(
@@ -63,7 +64,10 @@ module.exports = (sequelize) => {
 
       favorites: {
         type: DataTypes.JSONB,
-      }
+      },
+      tokenResetPassword: {
+        type: DataTypes.STRING,
+      },
     },
     { timestamps: false }
   );
