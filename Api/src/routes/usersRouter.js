@@ -13,6 +13,8 @@ const {
   updateEmailHandler,
   updatePasswordHandler,
   updateFavoritesItems,
+  forgotPasswordHandler,
+  resetPasswordHandler
 } = require("../handlers/usersHandlers");
 
 // usersRouter.get('/:id', userByIdHandler);
@@ -26,6 +28,7 @@ usersRouter.get("/:id", getUserByIdHandler);
 //-USER_POST--------------------------------------------//
 usersRouter.post("/", postUserHandler);
 usersRouter.post("/login", postUserLoginHandler);
+usersRouter.post("/forgotPassword", forgotPasswordHandler)
 
 //-USER_PUT--------------------------------------------//
 usersRouter.put("/image", putUserHandler);
@@ -34,5 +37,6 @@ usersRouter.put("/updateCartPurchase", putUpdatePurchase);
 usersRouter.put("/email", updateEmailHandler);
 usersRouter.put("/password", updatePasswordHandler);
 usersRouter.put("/favorites", updateFavoritesItems);
+usersRouter.put("/resetPassword/:id/:tokenResetPassword" ,resetPasswordHandler)
 
 module.exports = usersRouter;
