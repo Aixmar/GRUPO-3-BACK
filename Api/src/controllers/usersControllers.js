@@ -1,7 +1,9 @@
 const { User, Pizza } = require("../db");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
+const nodemailer = require("nodemailer");
 
+const { EMAIL, EMAIL_PASSWORD } = process.env;
 const getAllUsers = async () => {
   return await User.findAll();
 };
@@ -219,6 +221,128 @@ const logOut = async (res, cookies) => {
   return;
 };
 
+const forgotPasswordController = async(email)=>{
+  if(!email) throw new Error("email requerid");
+  const user = await User.findOne({
+    where: { email: email },
+  });
+  if(!user) throw new Error("There is not any user with that email");
+  const token = jwt.sign({id : user.id},'esterno',{expiresIn:'15m' })
+  user.update({
+    tokenResetPassword : token
+  })
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    port: 587,
+    secure: false,
+    auth: {
+      user: EMAIL,
+      pass: EMAIL_PASSWORD,
+    },
+    tls: {
+      rejectUnauthorized: false
+  }
+  });
+  const tokenMail = token.replaceAll(".","$")
+  console.log(tokenMail);
+  const emailPort = 'http://localhost:5173'
+  const mailOptions = {
+    from : "mix2pizza@gmail.com",
+    to : `${email}`,
+    subject : 'Reset your passwowrd',
+    html: `
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reset your passwowrd</title>
+        <style type="text/css">
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #333;
+            }
+            h1, h2, h3 {
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+                line-height: 1.2;
+            }
+            h1 {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+            .table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .table th, .table td {
+                padding: 10px;
+                text-align: left;
+                vertical-align: top;
+                border-bottom: 1px solid #ccc;
+            }
+            .table th {
+                background-color: #f5f5f5;
+                font-weight: bold;
+            }
+            .table td:last-child {
+                text-align: right;
+            }
+            .total {
+                margin-top: 30px;
+                text-align: right;
+            }
+            .total strong {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Reset your passwowrd in Mix2Pizza</h1>
+        
+        <p>Hello,</p>
+        <p>We've received a request to reset your password.No changes have been made to your account yet.</p>
+        <p>Yo can reset your password by clicking the link below:</p>
+        <a href="${emailPort}/resetPassword/${user.id}/${tokenMail}"> Reset your password</a>
+    </body>
+    </html>
+    `,
+  };
+    
+  
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error(error+'es aca');
+    } else {
+      console.log(`Correo enviado: ${info.response}`);
+    }
+  });
+}
+
+const resetPasswordController = async(req) =>{
+  const {newPassword} = req.body
+  console.log(newPassword);
+  const user = await User.findOne({
+    where: { 
+      id: req.params.id,
+      tokenResetPassword : req.params.tokenResetPassword},
+  });
+  if(!user) throw new Error("Error capo");
+  user.password = newPassword
+  user.save()
+  return 'contraseña cambiada'
+}
+
 module.exports = {
   getAllUsers,
   createUser,
@@ -232,4 +356,6 @@ module.exports = {
   updateEmail,
   updatePassword,
   addFavorite,
+  forgotPasswordController,
+  resetPasswordController
 };
