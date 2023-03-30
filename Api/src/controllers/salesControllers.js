@@ -5,4 +5,9 @@ const newSaleController = async (total, products) => {
     return newSale
 }
 
-module.exports = {newSaleController}
+const allSalesController = async ()=>{
+    const allSales = await Sale.findAll();
+    return allSales;
+}
+
+module.exports = {newSaleController, allSalesController}
