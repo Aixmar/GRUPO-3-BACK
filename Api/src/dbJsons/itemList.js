@@ -494,7 +494,7 @@ const itemList = [
   {
     name: "Chicken Caesar Salad Pizza",
     price: 1399,
-    image: "https://i.postimg.cc/L4g5Qk4Q/Chicken-Caesar-Salad-Pizza.png",
+    image: "https://res.cloudinary.com/dozwiqjh1/image/upload/v1680187483/Pizzas/Chicken-Caesar-Salad-Pizza_horpgk.png",
     detail: {
       meatOrVegetarian: 'meat',
       dough: "Wheat flour",
