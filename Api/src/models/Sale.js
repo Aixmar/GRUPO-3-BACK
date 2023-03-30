@@ -15,7 +15,7 @@ module.exports = (sequelize) => {
             allowNull: false
         },
         products: {
-            type: DataTypes.ARRAY,
+            type: DataTypes.ARRAY(DataTypes.JSONB),
             allowNull: false
         },
     })}
