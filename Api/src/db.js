@@ -44,7 +44,7 @@ modelDefiners.forEach((model) => model(sequelize));
 // En sequelize.models están todos los modelos importados como propiedades
 // Para relacionarlos hacemos un destructuring
 
-const { Ingredient, Pizza, User } = sequelize.models;
+const { Ingredient, Pizza, User, Sale } = sequelize.models;
 
 // Aca vendrian las relaciones
 
