@@ -5,8 +5,11 @@ const newSaleController = async (total, products,userName) => {
     return newSale
 }
 
-const getAllSales = async ()=>{
-    return await Sale.findAll();
+
+const allSalesController = async ()=>{
+    const allSales = await Sale.findAll();
+    return allSales;
 }
 
-module.exports = {newSaleController ,getAllSales}
+module.exports = {newSaleController, allSalesController}
+

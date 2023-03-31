@@ -1,4 +1,6 @@
-const { newSaleController,getAllSales } = require("../controllers/salesControllers")
+
+const { newSaleController, allSalesController } = require("../controllers/salesControllers")
+
 
 
 const postNewSale = async (req, res)=>{
@@ -12,14 +14,15 @@ const postNewSale = async (req, res)=>{
     }
 }
 
-const getSales = async(req,res) =>{
+
+const getAllSales = async (req,res) => {
     try {
-        const allSales = await getAllSales();
-        res.status(200).json(allSales);
-      } catch (error) {
-        res.status(400).json({ error: error.message });
-      }
-    };
+        const allSales = await allSalesController()
+        res.status(200).json(allSales)
+    } catch (error) {
+        res.status(400).json( {error:error.message} )
+    }
+}
 
+module.exports = {postNewSale, getAllSales}
 
-module.exports = {postNewSale ,getSales}
