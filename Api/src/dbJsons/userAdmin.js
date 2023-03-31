@@ -9,7 +9,8 @@ const userAdmin = [
       refreshToken: null,
       image: "",
       cart: [],
-      rol: "admin",    
+      rol: "admin",
+      favorites : []    
     },
 
     {

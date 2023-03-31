@@ -18,4 +18,8 @@ module.exports = (sequelize) => {
             type: DataTypes.ARRAY(DataTypes.JSONB),
             allowNull: false
         },
+        userName:{
+            type: DataTypes.STRING,
+            allowNull: false,
+        }
     })}
