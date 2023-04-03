@@ -1,4 +1,5 @@
 const userAdmin = [
+
   {
     name: "Admin M2P",
     lastName: "admin",
@@ -12,6 +13,7 @@ const userAdmin = [
     rol: "admin",
     favorites: [],
   },
+
 
   {
     name: "Jeremaia",

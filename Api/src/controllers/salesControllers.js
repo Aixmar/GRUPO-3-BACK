@@ -1,8 +1,15 @@
 const { Sale } = require("../db")
 
-const newSaleController = async (total, products) => {
-    const newSale = await Sale.create({total: total, products: products})
+const newSaleController = async (total, products,userName) => {
+    const newSale = await Sale.create({total: total, products: products , userName : userName})
     return newSale
 }
 
-module.exports = {newSaleController}
+
+const allSalesController = async ()=>{
+    const allSales = await Sale.findAll();
+    return allSales;
+}
+
+module.exports = {newSaleController, allSalesController}
+
