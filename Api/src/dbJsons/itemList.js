@@ -14,7 +14,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -33,7 +33,7 @@ const itemList = [
       meatIngredients: ["Pepperoni"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -52,7 +52,7 @@ const itemList = [
       meatIngredients: ["Beef", "Bacon", "Pepperoni"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -71,7 +71,7 @@ const itemList = [
       meatIngredients: ["Ham"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -90,7 +90,7 @@ const itemList = [
       meatIngredients: ["Chicken", "Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -109,7 +109,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -128,7 +128,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -147,7 +147,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -166,7 +166,7 @@ const itemList = [
       meatIngredients: ["Chicken"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -185,7 +185,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -204,7 +204,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 5,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -223,7 +223,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -242,7 +242,7 @@ const itemList = [
       meatIngredients: ["Sausage"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -261,7 +261,7 @@ const itemList = [
       meatIngredients: ["Steak"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -280,7 +280,7 @@ const itemList = [
       meatIngredients: ["Shrimp"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -299,7 +299,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -318,7 +318,7 @@ const itemList = [
       meatIngredients: ["Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -337,7 +337,7 @@ const itemList = [
       meatIngredients: ["Ham"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -356,7 +356,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -376,7 +376,7 @@ const itemList = [
       meatIngredients: ["Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -399,7 +399,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 1,
     active:true
   },
@@ -423,7 +423,7 @@ const itemList = [
       meatIngredients: ["Chicken"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -445,7 +445,7 @@ const itemList = [
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -468,7 +468,7 @@ const itemList = [
       meatIngredients: ["Meatballs", "Pepperoni", "Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -487,7 +487,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -506,7 +506,7 @@ const itemList = [
       meatIngredients: ["Chicken"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -525,7 +525,7 @@ const itemList = [
       meatIngredients: ["Sausage"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 3,
     active:true
   },
@@ -544,7 +544,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 7,
     active:true
   },
@@ -564,7 +564,7 @@ const itemList = [
       meatIngredients: ["Meatballs", "Beef", "Bacon"],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -583,7 +583,7 @@ const itemList = [
       meatIngredients: [],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -604,7 +604,7 @@ const itemList = [
       meatIngredients: ["Pepperoni", "Beef", "Ham", "Sausage" ],
     },
     category: "pizza",
-    rating: 3,
+    rating: 1,
     stock: 0,
     active:false
   },
@@ -614,7 +614,7 @@ const itemList = [
     price: 320,
     detail: { onSugar: "sugar", volumen: "600", description: "Soda. Pop. Soft drink. Sparkling beverage. Grab a Coca-Cola Original Taste, take a sip and find your “ahhh” moment. Enjoy Coca-Cola Original Taste." },
     category: "drinks",
-    rating: 5,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -624,7 +624,7 @@ const itemList = [
     price: 420,
     detail: { onSugar: "sugar", volumen: "1250", description: "Soda. Pop. Soft drink. Sparkling beverage. Grab a Coca-Cola Original Taste, take a sip and find your “ahhh” moment. Enjoy Coca-Cola Original Taste."},
     category: "drinks",
-    rating: 4,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -634,7 +634,7 @@ const itemList = [
     price: 500,
     detail: { onSugar: "sugar", volumen: "2000", description: "Soda. Pop. Soft drink. Sparkling beverage. Grab a Coca-Cola Original Taste, take a sip and find your “ahhh” moment. Enjoy Coca-Cola Original Taste." },
     category: "drinks",
-    rating: 4,
+    rating: 1,
     stock: 9,
     active:true
   },
@@ -644,7 +644,7 @@ const itemList = [
     price: 400,
     detail: { onSugar: "nosugar", volumen: "600" , description: "This is the kind of sugar-free soda that you want throughout your day. Whether you’re looking for a tasty way start to your day or to refresh your afternoon, you'll never be lost with a Diet Coke.Diet Coke always hits the spot."  },
     category: "drinks",
-    rating: 2,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -654,7 +654,7 @@ const itemList = [
     price: 500,
     detail: { onSugar: "nosugar", volumen: "1000" , description: "This is the kind of sugar-free soda that you want throughout your day. Whether you’re looking for a tasty way start to your day or to refresh your afternoon, you'll never be lost with a Diet Coke.Diet Coke always hits the spot." },
     category: "drinks",
-    rating: 2,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -664,7 +664,7 @@ const itemList = [
     price: 600,
     detail: { onSugar: "nosugar", volumen: "2000" , description: "Soda. Pop. Soft drink. This is the kind of sugar-free soda that you want throughout your day. Whether you’re looking for a tasty way start to your day or to refresh your afternoon, you'll never be lost with a Diet Coke.Diet Coke always hits the spot." },
     category: "drinks",
-    rating: 2,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -674,7 +674,7 @@ const itemList = [
     price: 320,
     detail: { onSugar: "sugar",volumen: "600", description: "Soda. Pop. Soft drink. Choosing the right fruit soda can be a whole thing. But when you’ve got a delicious bottle of Fanta Orange ready to go, the decision is easy. "},
     category: "drinks",
-    rating: 4,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -684,7 +684,7 @@ const itemList = [
     price: 400,
     detail: { onSugar: "nosugar",volumen: "600", description:"Soda. Pop. Soft drink. Choosing the right fruit soda can be a whole thing. But when you’ve got a delicious bottle of Fanta Orange Zero Sugar ready to go, the decision is easy." },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -694,7 +694,7 @@ const itemList = [
     price: 500,
     detail: { onSugar: "sugar",volumen: "2000" , description: "Soda. Pop. Soft drink. Choosing the right fruit soda can be a whole thing. But when you’ve got a delicious bottle of Fanta Orange ready to go, the decision is easy. "},
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -704,7 +704,7 @@ const itemList = [
     price: 320,
     detail: { onSugar: "sugar",volumen: "600", description:"Soda. Pop. Soft drink. It’s a one-of-a-kind, citrus soda that’s got a lemon-lime flavor made with cut through refreshment, making sure you’re ready to leave your mark."  },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -714,7 +714,7 @@ const itemList = [
     price: 500,
     detail: { onSugar: "sugar",volumen: "2000", description:"Soda. Pop. Soft drink. It’s a one-of-a-kind, citrus soda that’s got a lemon-lime flavor made with cut through refreshment, making sure you’re ready to leave your mark."  },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 4,
     active:true
   },
@@ -724,7 +724,7 @@ const itemList = [
     price: 500,
     detail: { onSugar: "nosugar",volumen: "2000"  , description:"Soda. Pop. Soft drink. It’s a one-of-a-kind, citrus soda that’s got a lemon-lime flavor made with cut through refreshment, making sure you’re ready to leave your mark."  },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 2,
     active:true
   },
@@ -734,7 +734,7 @@ const itemList = [
     price: 300,
     detail: { onSugar: "nosugar" ,volumen: "600", description: "Pure water, perfect taste Purified through a rigorous, 7-step process Ideal for c-store, concessions and vending" },
     category: "drinks",
-    rating: 4,
+    rating: 1,
     stock: 10,
     active:true
   },
@@ -744,7 +744,7 @@ const itemList = [
     price: 350,
     detail: { onSugar: "nosugar" ,volumen: "600", description: "Enjoy the delightfully refreshing taste of our Great Value Low Sodium Club Soda." },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -754,7 +754,7 @@ const itemList = [
     price: 350,
     detail: { onSugar: "nosugar" ,volumen: "1000", description:"Keep a sizable amount of bubbly refreshment on hand for any time you need with Clear American Peach Sparkling Water. This sparkling water has a peach flavor to offer a light alternative to sugary sodas and other sweet drinks." },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 3,
     active:true
   },
@@ -764,7 +764,7 @@ const itemList = [
     price: 350,
     detail: { onSugar: "nosugar" ,volumen: "1000", description:"Keep a sizable amount of bubbly refreshment on hand for any time you need with Clear American Peach Sparkling Water. This sparkling water has a peach flavor to offer a light alternative to sugary sodas and other sweet drinks." },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 5,
     active:true
   },
@@ -774,7 +774,7 @@ const itemList = [
     price: 350,
     detail: { onSugar: "nosugar" ,volumen: "1000", description:"Keep a sizable amount of bubbly refreshment on hand for any time you need with Clear American Peach Sparkling Water. This sparkling water has a peach flavor to offer a light alternative to sugary sodas and other sweet drinks." },
     category: "drinks",
-    rating: 3,
+    rating: 1,
     stock: 8,
     active:true
   },
@@ -794,7 +794,7 @@ const itemList = [
     price: 400,
     detail: { onSugar: "sugar", volumen: "500", description:"Non-carbonated drink, with orange taste. Includes caffeine." },
     category: "drinks",
-    rating: 2,
+    rating: 1,
     stock: 12,
     active:true
   },
@@ -822,7 +822,7 @@ const itemList = [
       description: "Brownie topped with Cookie Dough Frosting and M&M’S® MINIS Chocolate Candies",
     },
     category: "sides",
-    rating: 5,
+    rating: 1,
     stock: 11,
     active:true
   },
@@ -840,7 +840,7 @@ const itemList = [
       description: "Brownie topped with Cookie Dough Frosting and TWIX® Cookie Bar Pieces",
     },
     category: "sides",
-    rating: 4,
+    rating: 1,
     stock: 8,
     active:true
   },
@@ -858,7 +858,7 @@ const itemList = [
       description: "With a smooth, creamy texture and vanilla flavor, this simple, yet rich old-fashioned vanilla ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls."
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 11,
     active:true
   },
@@ -876,7 +876,7 @@ const itemList = [
       description: " With the smooth, creamy texture of cookie dough ice cream, delicious chocolate chip bits and cookie dough bites, this simple, yet rich cookie ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls."
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 7,
     active:true
   },
@@ -894,7 +894,7 @@ const itemList = [
       description: "Extra creamy Tillamook Cookies and Cream Ice Cream has a smooth texture and decadent mix of rich flavors that will make you fall in love with dessert over and over again. Made without compromise, Tillamook Ice Cream contains no artificial flavors or preservatives and is made with milk from cows not treated with rBST*."
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 7,
     active:true
   },
@@ -912,7 +912,7 @@ const itemList = [
       description: "With the smooth, creamy texture of Tillamook Chocolate Ice Cream, fudge and chocolate chips, this simple, yet rich chocolate ice cream is one you won't forget. Made with more cream than required and less air, Tillamook Ice Cream is creamier, smoother and richer for the most delicious spoonfuls. "
     },
     category: "sides",
-    rating: 4,
+    rating: 1,
     stock: 7,
     active:true
   },
@@ -976,7 +976,7 @@ const itemList = [
       description: "Traditionally seasoned oven roasted wings"
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 10,
     active:true
   },
@@ -995,7 +995,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 4,
+    rating: 1,
     stock: 9,
     active:true
   },
@@ -1014,7 +1014,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 2,
+    rating: 1,
     stock: 0,
     active:false
   },
@@ -1033,7 +1033,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 4,
+    rating: 1,
     stock: 10,
     active:true
   },
@@ -1052,7 +1052,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 0,
     active:false
   },
@@ -1071,7 +1071,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 12,
     active:true
   },
@@ -1090,7 +1090,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 3,
+    rating: 1,
     stock: 6,
     active:true
   },
@@ -1110,7 +1110,7 @@ const itemList = [
 
     },
     category: "sides",
-    rating: 2,
+    rating: 1,
     stock: 7,
     active:true
   }
