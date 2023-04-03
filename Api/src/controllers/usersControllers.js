@@ -245,7 +245,7 @@ const forgotPasswordController = async(email)=>{
   });
   const tokenMail = token.replaceAll(".","$")
   console.log(tokenMail);
-  const emailPort = 'http://localhost:5173'
+  const emailPort = 'https://grupo-3-back-production.up.railway.app'
   const mailOptions = {
     from : "mix2pizza@gmail.com",
     to : `${email}`,
