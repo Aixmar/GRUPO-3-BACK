@@ -247,7 +247,7 @@ const forgotPasswordController = async(email)=>{
   });
   const tokenMail = token.replaceAll(".","$")
   console.log(tokenMail);
-  const emailPort = 'http://localhost:5173'
+  const emailPort = 'https://mix2pizza.netlify.app/'
   const mailOptions = {
     from : "mix2pizza@gmail.com",
     to : `${email}`,
