@@ -22,6 +22,7 @@ const createUser = async (
   rol,
   previusPurchase,
   favorites,
+  location
 ) => {
   birthday.split("T").join(" ");
   const foundUser = await User.findOne({ where: { email : email } });
@@ -37,6 +38,7 @@ const createUser = async (
     rol,
     previusPurchase,
     favorites,
+    location
   });
 
 };
@@ -62,6 +64,7 @@ const updateEmail = async (email, userId) => {
   await user.save();
   return user;
 };
+
 const updatePassword = async (password, userId) => {
     const user = await getUserById(userId);
     if (!user) {
@@ -89,7 +92,6 @@ const putUpdatePurchaseController = async (cart, userId) => {
   if (!user) {
       return res.status(404).json({ error: "User not found" });
     }
-    console.log("SSSSSSSSSSSSSSSSSSSSS", cart);
     user.previusPurchase = user.previusPurchase || [];
     user.previusPurchase = [...user.previusPurchase, ...cart];
     //para guardar los datos
@@ -343,6 +345,15 @@ const resetPasswordController = async(req) =>{
   return 'contraseña cambiada'
 }
 
+
+const updateLocation = async (location, userId) => {
+  const user = await getUserById(userId);
+  if (!user) return res.status(404).json({ error: "User not found" });
+  user.location = location;
+  await user.save();
+  return user;
+};
+
 module.exports = {
   getAllUsers,
   createUser,
@@ -357,5 +368,6 @@ module.exports = {
   updatePassword,
   addFavorite,
   forgotPasswordController,
-  resetPasswordController
+  resetPasswordController,
+  updateLocation
 };

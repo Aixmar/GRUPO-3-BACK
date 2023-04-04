@@ -14,7 +14,8 @@ const {
   updatePasswordHandler,
   updateFavoritesItems,
   forgotPasswordHandler,
-  resetPasswordHandler
+  resetPasswordHandler,
+  updateLocationHandler
 } = require("../handlers/usersHandlers");
 
 // usersRouter.get('/:id', userByIdHandler);
@@ -38,5 +39,6 @@ usersRouter.put("/email", updateEmailHandler);
 usersRouter.put("/password", updatePasswordHandler);
 usersRouter.put("/favorites", updateFavoritesItems);
 usersRouter.put("/resetPassword/:id/:tokenResetPassword" ,resetPasswordHandler)
+usersRouter.put("/location", updateLocationHandler);
 
 module.exports = usersRouter;
