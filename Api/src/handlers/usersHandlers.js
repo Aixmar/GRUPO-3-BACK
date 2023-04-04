@@ -12,7 +12,8 @@ const {
   updatePassword,
   putUpdatePurchaseController,
   forgotPasswordController,
-  resetPasswordController
+  resetPasswordController,
+  updateLocation
 } = require("../controllers/usersControllers");
 require("dotenv").config();
 const jwt = require("jsonwebtoken");
@@ -38,6 +39,7 @@ const postUserHandler = async (req, res) => {
     rol,
     previusPurchase,
     favorites,
+    location
   } = req.body;
 
   try {
@@ -52,6 +54,7 @@ const postUserHandler = async (req, res) => {
       rol,
       previusPurchase,
       favorites,
+      location
     );
     res.status(200).json(newUser);
   } catch (error) {
@@ -99,6 +102,7 @@ const updateEmailHandler = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
 const updatePasswordHandler = async (req, res) => {
   const { password, userId } = req.body;
 
@@ -187,6 +191,18 @@ const resetPasswordHandler = async(req,res) =>{
   }
 }
 
+const updateLocationHandler = async (req, res) => {
+  const { location, userId } = req.body;
+  try {
+    const user = await updateLocation(location, userId);
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+
+
 module.exports = {
   getAllUsersHandler,
   postUserHandler,
@@ -201,5 +217,6 @@ module.exports = {
   putUpdatePurchase,
   updateFavoritesItems,
   forgotPasswordHandler,
-  resetPasswordHandler
+  resetPasswordHandler,
+  updateLocationHandler
 };

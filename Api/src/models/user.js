@@ -46,7 +46,9 @@ module.exports = (sequelize) => {
       refreshToken: {
         type: DataTypes.STRING,
       },
-
+      location: {
+        type: DataTypes.JSONB,
+      },
       image: {
         type: DataTypes.STRING,
       },

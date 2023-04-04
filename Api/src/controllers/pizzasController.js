@@ -26,15 +26,25 @@ const updatePizza = async (id,body) => {
 }
 
 const updateReviewsController = async (id,body) => {
-  console.log(body);
+  
   const item = await Pizza.findByPk(id);
   if (!item) {
     return res.status(404).json({ error: "Item not found" });
   }
-  
   item.reviews = item.reviews || [];
-  console.log(item.reviews);
+  
   item.reviews = [...item.reviews,{ ...body}];
+  if (item.reviews) {
+    let total = 0
+    for (let i = 0; i < item.reviews.length; i++) {
+      total = total + item.reviews[i].rating
+    }
+    console.log(item.reviews);
+    console.log(total);
+    const result = Number((total / item.reviews.length).toFixed(1))
+    
+    item.rating = result
+  }
   console.log(item.reviews);
     //para guardar los datos
   await item.save();
